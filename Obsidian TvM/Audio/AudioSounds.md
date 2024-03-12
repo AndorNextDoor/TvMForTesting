@@ -1,0 +1,1 @@
+An enumeration of available sound options, providing compile-time safety and easy selection of sound names in the Unity editor.

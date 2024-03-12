@@ -1,0 +1,86 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:Waves  ",
+      "color": {
+        "a": 1,
+        "rgb": 11064908
+      }
+    },
+    {
+      "query": "file:GameManager",
+      "color": {
+        "a": 1,
+        "rgb": 458246
+      }
+    },
+    {
+      "query": "path:UI  ",
+      "color": {
+        "a": 1,
+        "rgb": 14876426
+      }
+    },
+    {
+      "query": "path:TowerPlacement  ",
+      "color": {
+        "a": 1,
+        "rgb": 6073814
+      }
+    },
+    {
+      "query": "path:EnemyFolder/EnemyStates  ",
+      "color": {
+        "a": 1,
+        "rgb": 6053078
+      }
+    },
+    {
+      "query": "path:EnemyFolder  ",
+      "color": {
+        "a": 1,
+        "rgb": 14849279
+      }
+    },
+    {
+      "query": "path:TowerFolder/TowerStates  ",
+      "color": {
+        "a": 1,
+        "rgb": 14064988
+      }
+    },
+    {
+      "query": "path:TowerFolder  ",
+      "color": {
+        "a": 1,
+        "rgb": 12789800
+      }
+    },
+    {
+      "query": "path:Audio  ",
+      "color": {
+        "a": 1,
+        "rgb": 3597006
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": false,
+  "textFadeMultiplier": -1.3,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1.91839916839917,
+  "collapse-forces": false,
+  "centerStrength": 0.258835758835759,
+  "repelStrength": 12.1621621621622,
+  "linkStrength": 1,
+  "linkDistance": 30,
+  "scale": 0.11716719648998541,
+  "close": true
+}

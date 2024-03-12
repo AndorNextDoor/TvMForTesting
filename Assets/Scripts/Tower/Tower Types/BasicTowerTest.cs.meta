@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 35d6f075d242ecc4989de9c8b9aa48af
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - towerAttackBase: {fileID: 11400000, guid: a00452004b09eef49843e9910bc4424a, type: 2}
+  - towerIdleBase: {fileID: 11400000, guid: 997c5fb743d83224fbe1bdee3c014db4, type: 2}
+  - firepoint: {instanceID: 0}
+  - animator: {instanceID: 0}
+  - currentEnemy: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

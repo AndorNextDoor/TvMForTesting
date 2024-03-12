@@ -1,0 +1,6 @@
+- **Purpose**: Defines methods and properties for objects that can receive damage.
+- **Methods/Properties**:
+    - `Damage(float amount)`: Applies damage to the object.
+    - `Die()`: Handles the death of the object.
+    - `maxHealth`: Property representing the maximum health of the object.
+    - `currentHealth`: Property representing the current health of the object.

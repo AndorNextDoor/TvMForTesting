@@ -1,0 +1,21 @@
+[[Tower]]
+- **Purpose**: Manages the movement and collision detection of the projectile.
+- **Components/Fields**:
+    - `damage`: Amount of damage the projectile inflicts on enemies.
+    - `speed`: Speed at which the projectile moves.
+    - `enemyTag`: Tag assigned to enemy game objects.
+    - `laneEndTag`: Tag assigned to lane ending game objects.
+    - `lifeTimer`: Time before the projectile self-destructs.
+- **Methods/Functions**:
+    - `Update()`: Called every frame.
+        - Calls `MoveStraight()` to move the projectile forward.
+    - `MoveStraight()`: Moves the projectile forward in a straight line.
+        - Translates the projectile's position in the forward direction by `speed` units per second multiplied by `Time.deltaTime`.
+        - Decreases `lifeTimer` each frame, destroying the projectile if it reaches zero.
+    - `OnCollisionEnter(Collision collision)`: Called when the projectile collides with another collider.
+        - Checks if the collision's collider has the tag `enemyTag`.
+            - If true:
+                - Inflicts damage to the enemy by calling its `Damage()` method.
+                - Destroys the projectile.
+        - Checks if the collision's collider has the tag `laneEndTag`.
+            - If true, destroys the projectile.

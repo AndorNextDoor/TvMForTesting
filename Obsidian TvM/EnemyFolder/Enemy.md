@@ -1,0 +1,29 @@
+[[IDamagable]]
+- **Purpose**: Represents an enemy in the game, handling health, movement, attacking, and state transitions.
+- **Components/Fields**:
+    - `maxHealth`: Maximum health of the enemy.
+    - `currentHealth`: Current health of the enemy.
+    - `speed`: Movement speed of the enemy.
+    - `damage`: Damage inflicted by the enemy.
+    - `animator`: Animator component for controlling animations.
+    - `currentTowerToAttack`: Reference to the tower currently targeted for attack.
+    - `isInAttackRange`: Flag indicating if the enemy is in attack range.
+    - '`attackSound`: The enum of the AudioSounds to play when the enemy attacks
+- **ScriptableObject Variables**:
+    - `enemyMoveBase`: ScriptableObject defining enemy movement behavior.
+    - `enemyAttackBase`: ScriptableObject defining enemy attack behavior.
+- **State Machine Variables**:
+    - `StateMachine`: State machine managing enemy states.
+    - `MoveState`: Enemy moving state.
+    - `AttackState`: Enemy attack state.
+- **Methods/Functions**:
+    - `Awake()`: Initializes the enemy and its state machine.
+    - `Start()`: Initializes enemy components and sets the initial state.
+    - `Update()`: Updates the current state and triggers state transitions.
+    - `AnimationTriggerEvent(AnimationTriggerType triggerType)`: Handles animation trigger events.
+    - `OnCollisionEnter(Collision collision)`: Handles collision events.
+    - `Damage(float damageAmount)`: Reduces the enemy's health based on damage received.
+    - `Die()`: Destroys the enemy when its health reaches zero.
+- **Nested Enum**:
+    - `AnimationTriggerType`: Defines animation trigger types.
+

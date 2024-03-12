@@ -1,0 +1,14 @@
+- **Purpose**: Spawns waves of enemies in the game.
+- **Components/Fields**:
+    - `instance`: Static reference to the `WaveSpawner` instance.
+    - `timeBetweenWaves`: Time between waves.
+    - `waveTimer`: Timer for tracking wave intervals.
+    - `waves`: Array of `WaveDefinition` objects representing waves.
+    - `waveIndex`: Index of the current wave.
+    - `needToSpawnWave`: Flag indicating whether a wave needs to be spawned.
+    - `enemiesSpawnedAmount`: Number of enemies spawned in the current wave.
+    - `spawnPos`: Array of spawn positions for enemies.
+- **Methods/Functions**:
+    - `Awake()`: Initializes the `WaveSpawner`.
+    - `Update()`: Manages wave spawning logic.
+    - `Spawn()`: Spawns enemies for the current wave using coroutine.

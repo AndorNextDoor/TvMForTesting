@@ -1,0 +1,11 @@
+[[TowerAttackSOBase]]
+- **Purpose**: Defines the behavior for a tower that shoots basic projectiles.
+- **Components/Fields**:
+    - `projectile`: GameObject for the projectile to instantiate.
+    - `_timeBetweenHits`: Time interval between each shot.
+    - `_timer`: Timer to control the shooting rate.
+- **Methods/Functions**:
+    - `DoAnimationTriggerEventLogic(Tower.AnimationTowerTriggerType triggerType)`: Handles animation trigger events, triggering shooting when appropriate.
+    - `DoEnterLogic()`, `DoExitLogic()`, `DoFrameUpdateLogic()`: Implements shooting logic and manages the shooting rate.
+    - `Shoot()`: Instantiates a projectile at the tower's firepoint.
+    - `Initialize(GameObject _gameObject, Tower _tower)`: Initializes the Scriptable Object, setting up the shooting timer.
